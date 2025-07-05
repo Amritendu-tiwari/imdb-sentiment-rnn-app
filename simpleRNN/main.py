@@ -3,6 +3,8 @@ import tensorflow as tf
 from tensorflow.keras.datasets import imdb
 from tensorflow.keras.preprocessing import sequence
 from tensorflow.keras.models import load_model
+import os
+
 
 
 
@@ -10,8 +12,12 @@ word_index = imdb.get_word_index()
 reverse_word_index = {value: key for key, value in word_index.items()}
 
 ## load the pre-trained model with Relu activation 
-# model = load_model('simple_rnn_imdb.h5
-model = load_model('./simple_rnn_imdb.h5')
+# model = load_model('./simple_rnn_imdb.h5')
+
+current_dir = os.path.dirname(os.path.abspath(__file__))  # Directory where main.py lives
+model_path = os.path.join(current_dir, "simple_rnn_imdb.h5")
+model = load_model(model_path)
+
 
 
 #helper fucntion 
