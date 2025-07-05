@@ -15,8 +15,7 @@ This project is a **web-based sentiment analysis tool** for IMDB movie reviews. 
 
 ## 🚀 Demo
 
-![App Screenshot](https://user-images.githubusercontent.com/your-screenshot.png)
-
+https://imdb-sentiment-rnn-app.streamlit.app/
 ---
 
 ## 📄 Model Details
